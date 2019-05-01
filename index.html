@@ -1,0 +1,52 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<section class="content">
+  <h1 class="content__heading">Artifactory Onboarding</h1>
+  <p class="content__lede">New team onboarding</p>
+  <form class="content__form artifactory-onboarding">
+    <div class="artifactory-onboarding__input-group">
+      <label class="artifactory-onboarding__label" for="name">Team Name</label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--text" id="name" name="name" type="text"/>
+    </div>
+    <div class="artifactory-onboarding__input-group">
+      <label class="artifactory-onboarding__label" for="email">Requester Email</label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--email" id="email" name="email" type="email"/>
+    </div>
+    <div class="artifactory-onboarding__input-group">
+      <label class="artifactory-onboarding__label" for="name">Primary site: </label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--radio" id="primary-ca1" name="primary" type="radio" value="CA1"/>
+      <label class="artifactory-onboarding__label artifactory-onboarding__label--radio" for="primary-ca1">CA1</label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--radio" id="primary-lhr" name="primary" type="radio" value="LHR"/>
+      <label class="artifactory-onboarding__label artifactory-onboarding__label--radio" for="primary-lhr">LHR</label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--radio" id="primary-sin" name="primary" type="radio" value="LHR"/>
+      <label class="artifactory-onboarding__label artifactory-onboarding__label--radio" for="primary-sin">SIN</label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--radio" id="primary-aws" name="primary" type="radio" value="AWS"/>
+      <label class="artifactory-onboarding__label artifactory-onboarding__label--radio" for="primary-aws">AWS</label>
+    </div>
+    <div class="artifactory-onboarding__input-group">
+      <label class="artifactory-onboarding__label" for="message">Additional details for runbook</label>
+      <textarea class="artifactory-onboarding__input artifactory-onboarding__input--textarea" id="message" name="message" rows="6" cols="65"></textarea>
+    </div>
+    <div class="artifactory-onboarding__input-group">
+      <p class="artifactory-onboarding__label--checkbox-group">Replication sites</p>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--checkbox" id="location-ca1" name="location" type="checkbox" value="CA1"/>
+      <label class="artifactory-onboarding__label artifactory-onboarding__label--checkbox" for="location-ca1">CA1</label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--checkbox" id="location-lhr" name="location" type="checkbox" value="LHR"/>
+      <label class="artifactory-onboarding__label artifactory-onboarding__label--checkbox" for="location-lhr">LHR</label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--checkbox" id="location-sin" name="location" type="checkbox" value="LHR"/>
+      <label class="artifactory-onboarding__label artifactory-onboarding__label--checkbox" for="location-sin">SIN</label>
+      <input class="artifactory-onboarding__input artifactory-onboarding__input--checkbox" id="location-aws" name="location" type="checkbox" value="AWS"/>
+      <label class="artifactory-onboarding__label artifactory-onboarding__label--checkbox" for="location-aws">AWS</label>
+    </div>
+    <input type="submit" class="artifactory-onboarding__button" value="Submit">
+  </form>
+</section>
+<div class="results">
+  <h2 class="results__heading">Form Data</h2>
+  <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+</div>
+<script type="text/javascript" src="compute.js"></script>
+</html>
